@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cseperedő Manó Alapítvány</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="icon" href="images/logo-hands-tr-bg.png">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    
+</head>
+
+<body id="top">
+
+<header>
+    <div id="header">
+        <div class="wrapper">
+            <div id="logo-text">
+                <h1><a href="index.html">Cseperedő Manó Alapítvány</a></h1>
+                <a href="index.html"><img id="logo" src="images/logo-hands-tr-bg.png" width="50" height="50" alt="Foundation logo"></a>
+            </div>
+            <ul id="navigation">
+                <li><a href="index.html">Start</a></li>
+                <li><a href="photos.html">Galéria</a></li>
+                <li><a href="charity.html">Adományok</a></li>                    
+                <li><a href="contact.html">Kapcsolat</a>
+            </ul>
+        </div>
+    </div>
+    <div id="orange-line">
+        <span>Adószám: 19155421-1-10</span>
+        <span>Számlaszám: K&H Bank 10403507-50526850-90511014</span>
+    </div>
+    <div id="mobile-orange">
+        <span>Adószám:<br> 19155421-1-10<br></span>
+        <span>Számlaszám:<br> K&H Bank 10403507-50526850-90511014</span>
+    </div>
+
+    <!-- Mobile navigation -->
+    <img id="ham-icon" width="33" height="30" src="images/hamburger-icon.png" alt="Hamburger Icon">
+    <img id="close-icon" width="33" height="30" src="images/close-icon.png" alt="Close Icon">
+    <div id="mobile-dropdown">
+        <ul>
+            <li><a href="index.html">Start</a></li>
+            <li><a href="charity.html">Adományok</a></li>      
+            <li><a href="photos.html">Galéria</a></li>              
+            <li><a href="contact.html">Kapcsolat</a>
+        </ul>
+    </div>
+</header>
+<main>
+    <div id="teaser">
+        <div class="wrapper">
+            <div id="impressum">
+                <h2>Impresszum</h2>
+                <p>Név: Cseperedő Manó Alapítvány<br>
+                Székhely: 3300 Eger, Veres Péter utca 5. 3.em. 12.a.<br>
+                Bejegyző hatóság: Egri Törvényszék<br>
+                Alapítvány jellege: nyílt alapítvány<br>
+                Nyilvántartási szám: 10-01-0001188<br>
+                Közhasznú jogállás: Nem közhasznú<br>
+                Adószám: 19155421-1-10<br>
+                Számlavezető Bank: K&H Bank Zrt.<br>
+                Számlaszám: 10403507-50526850-90511014<br>
+                IBAN szám: HU72 10403507-50526850-90511014<br>
+                Telefonszám: +36 20 368 1063<br>
+                E-mail: info@cseperedomano.hu<br>
+                A weboldal üzemeltetője: Cseperedő Manó Alapítvány<br>
+                </p>
+                
+                <h2>Tárhelyszolgáltató adatai</h2>
+                <p>
+                    Név: Nethely Kft.<br>
+                    Cím: 1115 Budapest, Halmi utca 29.<br>
+                    Info: info@nethely.hu<br>
+                    Telefonszám: +36-1-445-2040<br>
+                    Cégjegyzékszám: Cg. 01-09-961790<br>
+                    Adószám: 23358005-2-43 <br>
+                </p>
+            </div>
+            <p><a class="top" href="#top" style="font-weight: 300;">Vissza az oldal elejére</a></p>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div id="footer">
+        <div id="orange-line-footer"></div>
+        <div class="wrapper">
+            <div id="footer-links-wrapper">
+                <a href="mailto:info@alapitvany.hu">Email</a>
+                <a href="impressum.html">Impresszum</a>
+                <a href="adatvedelmi-tajekoztato.pdf" target="_blank">Adatkezelés</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<script src="scripts/scripts.js"></script>
+
+<script>
+    $(document).ready(function(){
+
+        $('a.top').click(function () {
+            $('body,html').animate({scrollTop: 0}, 600);
+                return false;
+            });
+
+    });
+
+    //Mobile Dropdown
+    $('#ham-icon').css('cursor', 'pointer');
+    $('#close-icon').css('cursor', 'pointer');
+
+    $('#ham-icon').click(function () {
+        $("#ham-icon").css({ "display": "none" });
+        $("#close-icon").css({ "display": "block" });
+        $('#mobile-dropdown').slideToggle("slow");
+        });
+
+    $('#close-icon').click(function () {
+        $("#close-icon").css({ "display": "none" });
+        $("#ham-icon").css({ "display": "block" });
+        $('#mobile-dropdown').slideToggle("slow");
+        });
+
+</script>
+
+</body>
+</html>
