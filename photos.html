@@ -115,7 +115,7 @@
         <div id="orange-line-footer"></div>
         <div class="wrapper">
             <div id="footer-links-wrapper">
-                <a href="mailto:info@alapitvany.hu">Email</a>
+                <a href="contact.html">Email</a>
                 <a href="impressum.html">Impresszum</a>
                 <a href="adatvedelmi-tajekoztato.pdf" target="_blank">Adatkezelés</a>
             </div>
@@ -153,6 +153,23 @@
         $("#close-icon").css({ "display": "none" });
         $("#ham-icon").css({ "display": "block" });
         $('#mobile-dropdown').slideToggle("slow");
+        });
+
+
+        $(document).ready(function () {
+
+        $("img").on("contextmenu",function(e){
+            return false;
+        });
+        $("img").on("dragstart",function(e){
+            return false;
+        });
+        $("body").on("contextmenu",function(e){
+            return false;
+        });
+        $("body").on("dragstart",function(e){
+            return false;
+        });
         });
 
 </script>
