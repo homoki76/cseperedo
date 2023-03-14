@@ -24,6 +24,9 @@ a {
 h2 {
     font: 400 24px/26px 'Roboto', sans-serif;
 }
+h3 {
+    font: 300 18px/36px 'Roboto', sans-serif;
+}
 p {
     font: 300 18px/36px 'Roboto', sans-serif;
 }
@@ -135,6 +138,9 @@ ul#navigation li a:hover, ul#navigation li .active {
     text-align: left;
     width: 90%;
 }
+strong {
+    font-weight: 300;
+}
 #teaser .col_1_2 {
     margin-bottom: 50px;
 }
@@ -169,6 +175,10 @@ ul#navigation li a:hover, ul#navigation li .active {
     height: 140px; 
     width: 600px;
     margin: 0 auto;
+}
+#text-container h2 {
+    text-align: left;
+    font: 300 18px/36px 'Roboto', sans-serif;
 }
 #quotation {
     width: 680px;
@@ -216,11 +226,10 @@ video {
 .top:hover {
     opacity: 0.5;
 }
-#impressum p {
+#impressum h3, #impressum p {
     text-align: left;
     margin-left: 10%;
-    font-size: 18px;
-    line-height: 40px;
+    font: 300 18px/36px 'Roboto', sans-serif;
 }
 #teaser .wrapper #impressum h2 {
     font-size: 30px;
@@ -307,28 +316,23 @@ footer {
 }
 #footer {
     background-color: #E8E9EB;
-    height: 125px;
+    height: 135px;
     width: 100%;
     color: #485d85;
     margin-top: 10px;
 }
 #footer .wrapper {
     margin: 0 auto;
-    height: 110px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    height: 90px;
 }
 #footer-links-wrapper {
+    margin: 30px auto 0;
     width: 45%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-footer #footer .wrapper p {
-    display: inline-block;
-    margin: 0 10%;
-}
+
 footer #footer .wrapper #footer-links-wrapper a {
     color: #485d85;
     letter-spacing: 0.3px;
@@ -337,10 +341,16 @@ footer #footer .wrapper #footer-links-wrapper a {
 footer #footer .wrapper #footer-links-wrapper a:hover {
     opacity: 0.5;
 }
-#footer-bottom-charity {
+#footer-bottom-charity, #footer-bottom-thanks {
     width: 100%;
     position: fixed;
     bottom: 0;
+}
+#copyright-box {
+    display: block;
+    margin: 40px auto;
+    text-align: center;
+    font-size: 14px;
 }
 /* - Mobile Navigation - */
 #ham-icon {
@@ -354,5 +364,20 @@ footer #footer .wrapper #footer-links-wrapper a:hover {
     width: 100%;
     margin-bottom: 20px;
 }
-
+#thank-you {
+    width: 100%;
+    height: 70vh;
+    padding: 10% 1% 0;
+}
+#thank-you h1, #thank-you h2, #thank-you p {
+    text-align: center;
+    font-weight: 300;
+    line-height: 80px;
+}
+#thank-you a {
+    font-style: italic;
+}
+#thank-you a:hover {
+    color: #869dc8;
+}
 
